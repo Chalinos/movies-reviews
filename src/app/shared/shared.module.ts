@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FoterComponent } from './foter/foter.component';
-import { NavigateMenuComponent } from './navigate-menu/navigate-menu.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -10,7 +10,12 @@ import { NavigateMenuComponent } from './navigate-menu/navigate-menu.component';
   declarations: [
     HeaderComponent,
     FoterComponent,
-    NavigateMenuComponent
+    SidebarComponent,
+  ],
+  exports:[
+    HeaderComponent,
+    FoterComponent,
+    SidebarComponent,
   ],
   imports: [
     CommonModule
