@@ -27,7 +27,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'dist/movies-reviews/**'
+    SourceFolder: 'dist/**'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
