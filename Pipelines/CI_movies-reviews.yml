@@ -5,6 +5,7 @@
 
 trigger:
 - feature/**
+- hotfix/**
 
 pool:
   name: Ubuntu 22.04 Local
@@ -12,7 +13,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '18.x'
   displayName: 'Install Node.js'
 
 - script: |
