@@ -12,6 +12,7 @@ import { ViewMovieComponent } from './pages/view-movie/view-movie.component';
     CommonModule
   ], exports: [
     ViewMovieComponent
-  ]
+  ],
+  bootstrap: [ViewMovieComponent]
 })
 export class MoviesModule { }
