@@ -41,10 +41,11 @@
     background-repeat: no-repeat;
     width: 70px;
     background-size: 70px;
-    background-color:  transparent;
+    background-color: transparent;
     border: none;
     background-position: center;
 }
+
 
 /*Search*/
 .search__container {
@@ -95,4 +96,6 @@
     border-bottom: 1px solid white;
     border-radius: 0;
     background-position: 100% center;
+    // background-color: red;
+    background-image:none;
 }
