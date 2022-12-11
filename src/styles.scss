@@ -1,5 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.background-gradient {
+  background: rgb(49, 34, 68);
+  background: linear-gradient(
+    49deg,
+    rgba(49, 34, 68, 1) 0%,
+    rgba(33, 47, 69, 1) 33%,
+    rgba(39, 38, 64, 1) 66%,
+    rgba(20, 69, 82, 1) 100%
+  );
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.gray-text {
+  color: #B8B8B8;
+}
+
+.hide {
+  display: none;
 }

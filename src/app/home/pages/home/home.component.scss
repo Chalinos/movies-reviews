@@ -1,3 +1,5 @@
+// Hero screen
+// ______________________________________________________
 .info-movie {
   width: 100vw;
   height: auto;
@@ -23,11 +25,13 @@
   display: none;
 }
 
+.movie-container {
+  width: 100%;
+}
+
 .movie-cover {
   width: 50%;
   height: auto;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 .movie-title-outside {
@@ -40,12 +44,30 @@
   padding: 10px;
 }
 
+// Best movies
+// ______________________________________________________
+.all-movies {
+  display: none;
+}
+
+.titles-movies {
+  text-align: center;
+}
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  // Hero screen
+  // ______________________________________________________
+
+  .movie-title-outside {
+    display: none;
+  }
+
   .hero-movie-content {
     color: #fff;
     display: block;
@@ -69,6 +91,37 @@
   .movie-title-outside {
     text-align: left;
   }
+
+  .movie-cover {
+    height: 50vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Best movies
+  // ______________________________________________________
+
+  .best-qualified {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .titles-movies {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .all-movies {
+    display: block;
+    margin-left: auto;
+    text-decoration: none;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -79,7 +132,8 @@
   }
 
   .movie-cover {
-    width: 25%;
+    width: 25vw;
+    height: auto;
     margin: auto;
     margin-left: 15px;
     margin-right: 0;
